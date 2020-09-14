@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question Form</title>
+    <link rel="Stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+
+<body style="background: #EFF0F1">
+
+<div class="container py-3">
+    <h2>Ask a public question</h2>
+    <div class="shadow p-3 bg-white rounded">
+
+        <div class="question-title">
+            <h6>Title</h6>
+            <p>Be specific and imagine you’re asking a question to another person</p>
+            <input class="form-control" type="text" placeholder="e.g. Difference between Retrofit and Volley" aria-label="Search">
+        </div>
+
+        <div class="question-body">
+            <h5>Body</h5>
+            <p>Include all the information someone would need to answer your question</p>
+            <textarea class="form-control" name="descs" id="descs"></textarea>
+        </div>
+
+        <div class="question-tag">
+            <h5>Tag</h5>
+            <p>Add up to 5 tags to describe what your question is about</p>
+            <input class="form-control" type="text" placeholder="e.g. Python, Android" aria-label="Search">
+        </div>
+        <button type="button" class="btn btn-outline-warning btn-sm">Post your question</button>
+    </div>
+
+
+    <script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('descs');
+    </script>
+
+    <!--Bootstrap CDN-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,292 @@
+*{
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+font-family: 'Lato', sans-serif;
+}
+
+.navbar {
+    background-color: #545B62;
+    /*color: orange;*/
+}
+
+.btn_login {
+    background: #d4e2ec;
+    color: blue;
+  /*width: 100%;*/
+    border: 1px solid blue;
+    border-radius: 3px;
+    /*padding: 3px;*/
+}
+
+.btn_login:hover {
+    background-color: #a7cce7; /* Green */
+    color: blue;
+}
+
+.btn_signup {
+    background: #d4e2ec;
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 3px;
+    /*padding: 3px;*/
+  /*width: 100%;*/
+}
+
+.btn_signup:hover {
+    background-color: #a7cce7; /* Green */
+    color: blue;
+}
+
+
+
+.left-sidebar {
+    margin: 0;
+    padding: 10px;
+    background-color: #9da1a5;
+    /*border-right: 1px solid #DFB141;*/
+    height: 100%;
+}
+
+.left-sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.left-sidebar a:hover{
+    background: #DFB141;
+    color: black;
+}
+
+.main-contnet {
+    /*padding: 10px;*/
+}
+
+
+.right-sidebar {
+    margin: 0;
+    padding: 10px;
+    background-color: #9da1a5;
+    /*border-left: 1px solid #DFB141;*/
+    height: 100%;
+    border-left: 1px solid #81ADF8;
+}
+
+.right-sidebar a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.right-sidebar a:hover{
+    background: #DFB141;
+    color: black;
+}
+
+
+
+/*Ask Question Page*/
+.question-title{
+    margin-bottom: 30px;
+}
+
+.question-body{
+    margin-bottom: 30px;
+}
+
+.question-tag{
+    margin-bottom: 30px;
+}
+
+
+.container p{
+    font-size: 12px;
+}
+
+
+
+
+/*edited by farhana*/
+
+html,body{
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+/*.container {*/
+/*height: 100%;*/
+/*align-content: center;*/
+/*text-align: center;*/
+/*}*/
+/*.container div h2 {*/
+/* text-align: center;*/
+/* margin-top: 30px;*/
+/*}*/
+
+
+.card{
+height: 510px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+}
+.card-register{
+    height: 560px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    }
+.card-body {
+      height: 400px !important;
+  }    
+.card-register .card-body {
+    height: 400px;
+}
+.card-body  img {
+  padding-left: 150px;
+} 
+.card-register .card-header img{
+    padding-left: 150px;
+        }
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #2378CC;
+}
+.input-group-prepend span {
+  width: 50px;
+  background-color: #2378CC;
+  color: rgb(100, 94, 94);
+  border: 0 !important;
+}
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color:black;
+}
+.card-tag {
+    height: 200px;
+    margin-top: auto;
+    margin-bottom: 35px !important;
+    width: 200px;
+    background-color:#fafafa !important;
+
+
+}
+/*.col-md-8 .row {*/
+/*  margin-left:3px !important;*/
+/*}*/
+.col-md-8 .row .card-header {
+  height: 50px !important;
+}
+/* .row {
+  margin-left: 8px;
+} */
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+.card-header .h4{
+  margin-top:10px;
+}
+.input-group-prepend span{
+width: 50px;
+background-color: white;
+color:#ff9100;
+border-radius: 10px;
+border:0 !important;
+}
+
+input:focus, select:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember, .links{
+color:black;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn:hover{
+color:white;
+background-color: #637282;
+}
+
+.login_btn{
+color:  #ff9100;
+background-color: white;
+border-color:#ff9100;
+}
+.reset_btn{
+  color:white;
+  background-color: #637282;
+  }
+  
+  .reset_btn:hover{
+  color:  #ff9100;
+  background-color: white;
+  border-color:#ff9100;
+  }
+
+.links a{
+margin-left: 4px;
+}
+.search-tag{
+  width: 100% !important;
+  margin-top : 30px;
+  margin-bottom: 40px;
+  background-color: rgba(0,0,0,.03) !important;
+}
+.card-home {
+  height: 115px !important;
+  width: 90% !important;
+  border-top: 2px solid #ff9100 !important;
+  margin-left: 5% !important;
+}
+.col-md-8 .home-row {
+  margin-left:-25px !important;
+  margin-top:-10px !important;
+}
+.bg-home-tag{
+  background-color: #ffe0b2;
+}
+.bg-home-reply{
+  height: 90px;
+  text-align: center;
+}
+.icon-reply{
+  color:orange;
+  padding-top:5px !important;
+  height:35px !important;
+  width:35px !important;
+}
+.bg-field{
+  background-color:#f5f5f570;
+  border-color: #ff9100;
+
+
+}
+.space{
+  margin-bottom:25px !important;
+}
+/* .form-control:hover{
+  background-color: #e1f5fe;
+} */
