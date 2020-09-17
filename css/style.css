@@ -6,42 +6,23 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.navbar a button {
+    color: #F4A540;
+    background: #545B62;
+}
+
+.navbar a button:hover {
+    color: #545B62;
+    background: #F4A540;
+}
+
 .navbar {
     background-color: #545B62;
     /*color: orange;*/
 }
 
-.btn_login {
-    background: #d4e2ec;
-    color: blue;
-    /*width: 100%;*/
-    border: 1px solid blue;
-    border-radius: 3px;
-    /*padding: 3px;*/
-}
-
-.btn_login:hover {
-    background-color: #a7cce7; /* Green */
-    color: blue;
-}
-
-.btn_signup {
-    background: #d4e2ec;
-    color: blue;
-    border: 1px solid blue;
-    border-radius: 3px;
-    /*padding: 3px;*/
-    /*width: 100%;*/
-}
-
-.btn_signup:hover {
-    background-color: #a7cce7; /* Green */
-    color: blue;
-}
-
-
 .left-sidebar {
-    margin: 0;
+    /*margin: 0;*/
     /*padding: 10px;*/
     background-color: white;
     border-right: 1px solid silver;
@@ -66,7 +47,7 @@ body {
 
 
 .right-sidebar {
-    margin: 0;
+    /*margin: 0;*/
     /*padding: 10px;*/
     background-color: white;
     height: 100%;
@@ -88,9 +69,10 @@ body {
 
 /*Ask Question Page*/
 
-.ask-question-body{
+.ask-question-body {
     background: #EFF0F1;
-    font-family: 'Nunito', sans-serif;"
+    font-family: 'Nunito', sans-serif;
+"
 
 }
 
@@ -190,8 +172,7 @@ html, body {
     margin-top: auto;
     margin-bottom: 35px !important;
     width: 190px;
-    background-color:#fafafa !important;
-
+    background-color: #fafafa !important;
 
 
 }
@@ -256,21 +237,27 @@ input:focus, select:focus {
     color: white;
     background-color: #637282;
 }
-
+.reset_btn:hover {
+    color: #ff9100;
+    background-color: white;
+    border-color: #ff9100;
+}
 .btn-secondary:hover {
-color:  #ff9100 !important;
-background-color:white !important;
-border-color:#ff9100 !important;
+    color: #ff9100 !important;
+    background-color: white !important;
+    border-color: #ff9100 !important;
 }
+
 .btn-secondary {
-  color:white !important;
-  background-color: #6c757d !important;
-  border-color: #6c757d !important;
+    color: white !important;
+    background-color: #6c757d !important;
+    border-color: #6c757d !important;
 }
+
 .login_btn {
-color:  #ff9100;
-background-color: white;
-border-color:#ff9100;
+    color: #ff9100;
+    background-color: white;
+    border-color: #ff9100;
 }
 
 .links a {
@@ -295,16 +282,22 @@ border-color:#ff9100;
     margin-left: -25px !important;
     margin-top: -10px !important;
 }
-  
-.bg-home-tag{
-  background-color: orange;
-  color:white;
+
+.bg-home-tag {
+    background-color: orange;
+    color: white;
 }
+
+.bg-home-tag:hover {
+    background-color: rgb(255,140,0);
+  }
 .border-tag-card{
   border-color:orange !important;
+
 }
-.tag-head-txt{
-  color:orange !important;
+
+.tag-head-txt {
+    color: orange !important;
 }
 
 .bg-home-reply {
@@ -315,8 +308,8 @@ border-color:#ff9100;
 .icon-reply {
     color: orange;
     padding-top: 5px !important;
-    height: 35px !important;
-    width: 35px !important;
+    /* height: 35px !important;
+    width: 35px !important; */
 }
 
 .bg-field {
@@ -331,8 +324,42 @@ border-color:#ff9100;
 }
 
 .card-title-home {
-  padding-top: 1rem !important;
+  /* padding-top: .5rem !important; */
+  margin-bottom: .5rem !important;
 }
+
 .round-field {
   border-radius: 5px !important;
+}
+.round-search{
+    border-bottom-right-radius: 5px !important; 
+    border-top-right-radius: 5px !important;
+}
+.card-title-home a {
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+}
+.card-title-home a:hover {
+    color: #6c6a6a !important;
+    /* color: red !important; */
+    text-decoration: none;
+    /* background-color:#eeeeee!important; */
+}
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff !important;
+    background-color:#545B62 !important;
+    /* border-color: orange !important; */
+    border-color: #545B62 !important;
+}
+.page-link.active {
+    color: #fff !important;
+}
+.page-item .page-link {
+    color: orange !important;
+    border: 1px solid orange !important;
+}
+.page-link:hover {
+    background-color: #eeeeee !important;
 }

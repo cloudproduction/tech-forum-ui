@@ -37,7 +37,7 @@
 <nav class="navbar navbar-expand-lg navbar-light sticky-top">
     <div class="row w-100 justify-content-center align-items-center">
         <div class="col" id="nav-brand-toggle">
-            <a class="navbar-brand text-warning" href="index.html">Tech Blog</a>
+            <a class="navbar-brand" style="color: #F4A540" href="index.html">Tech Blog</a>
             <button class="navbar-toggler bg-warning" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,50 +66,51 @@
     <!--        </div>-->
 </nav>
 
-
-<div class="row">
-    <!--			left sidebar start-->
-    <div class="col-sm-2">
-    </div>
-    <!--			left sidebar end-->
-
-
-    <!--			Content Start-->
-    <div class="col-sm-8 m-4">
-        <div class="main-content mt-3">
-            <h2>Ask a public question</h2>
-            <div class="shadow p-3 bg-white rounded">
-
-                <div class="question-title">
-                    <h6>Title</h6>
-                    <p>Be specific and imagine you’re asking a question to another person</p>
-                    <input class="form-control" type="text" placeholder="e.g. Difference between Retrofit and Volley"
-                           aria-label="Search">
-                </div>
-
-                <div class="question-body">
-                    <h5>Body</h5>
-                    <p>Include all the information someone would need to answer your question</p>
-                    <textarea class="form-control" name="descs" id="descs"></textarea>
-                </div>
-
-                <div class="question-tag">
-                    <h5>Tag</h5>
-                    <p>Add up to 5 tags to describe what your question is about</p>
-                    <input class="form-control" type="text" placeholder="e.g. Python, Android" aria-label="Search">
-                </div>
-                <button type="button" class="btn btn-warning btn-sm">Post your question</button>
-
-            </div>
-        </div>
-        <!--			Content End-->
-
-        <!--			right sidebar start-->
+<div class="container-fluid">
+    <div class="row">
+        <!--			left sidebar start-->
         <div class="col-sm-2">
         </div>
-        <!--			right sidebar end-->
+        <!--			left sidebar end-->
 
-    </div>
+
+        <!--			Content Start-->
+        <div class="col-sm-8 m-4">
+            <div class="main-content mt-3">
+                <h2>Ask a public question</h2>
+                <div class="shadow p-3 bg-white rounded">
+
+                    <div class="question-title">
+                        <h6>Title</h6>
+                        <p>Be specific and imagine you’re asking a question to another person</p>
+                        <input class="form-control" type="text"
+                               placeholder="e.g. Difference between Retrofit and Volley"
+                               aria-label="Search">
+                    </div>
+
+                    <div class="question-body">
+                        <h5>Body</h5>
+                        <p>Include all the information someone would need to answer your question</p>
+                        <textarea class="form-control" name="descs" id="descs"></textarea>
+                    </div>
+
+                    <div class="question-tag">
+                        <h5>Tag</h5>
+                        <p>Add up to 5 tags to describe what your question is about</p>
+                        <input class="form-control" type="text" placeholder="e.g. Python, Android" aria-label="Search">
+                    </div>
+                    <button type="button" class="btn btn-warning btn-sm">Post your question</button>
+
+                </div>
+            </div>
+            <!--			Content End-->
+
+            <!--			right sidebar start-->
+            <div class="col-sm-2">
+            </div>
+            <!--			right sidebar end-->
+
+        </div>
 
 
         <script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
@@ -128,5 +129,6 @@
                 integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
                 crossorigin="anonymous"></script>
     </div>
+</div>
 </body>
 </html>
