@@ -1,0 +1,46 @@
+*{
+    font-family: 'Nunito', sans-serif;
+}
+
+.question_with_date{
+    font-size: 14px;
+    /*border-bottom: 1px solid #e7e5e5 ;*/
+}
+
+.question_with_date hr{
+    margin-top: -20px;
+}
+
+.question_with_date p > span{
+    color: #9da1a5;
+}
+
+
+.question_body button{
+    background: #ffe0b2;
+    border: #ffe0b2;
+}
+
+.question_body button:hover{
+    background: #ffcc80;
+}
+
+.question_edit_delete a{
+    font-size: 14px;
+}
+
+.answer_edit_delete{
+    font-size: 14px;
+}
+
+pre{
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  /*margin-bottom: 10px;*/
+  /*overflow: auto;*/
+  width: auto;
+  padding: 5px;
+  background-color: #eee;
+  /*width: 650px!ie7;*/
+  /*padding-bottom: 20px!ie7;*/
+  max-height: 600px;
+}
