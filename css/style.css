@@ -256,7 +256,11 @@ input:focus, select:focus {
     color: white;
     background-color: #637282;
 }
-
+.reset_btn:hover {
+    color: #ff9100;
+    background-color: white;
+    border-color: #ff9100;
+}
 .btn-secondary:hover {
 color:  #ff9100 !important;
 background-color:white !important;
@@ -300,6 +304,9 @@ border-color:#ff9100;
   background-color: orange;
   color:white;
 }
+.bg-home-tag:hover {
+    background-color: rgb(255,140,0);
+  }
 .border-tag-card{
   border-color:orange !important;
 }
@@ -315,8 +322,8 @@ border-color:#ff9100;
 .icon-reply {
     color: orange;
     padding-top: 5px !important;
-    height: 35px !important;
-    width: 35px !important;
+    /* height: 35px !important;
+    width: 35px !important; */
 }
 
 .bg-field {
@@ -331,7 +338,8 @@ border-color:#ff9100;
 }
 
 .card-title-home {
-  padding-top: 1rem !important;
+  /* padding-top: .5rem !important; */
+  margin-bottom: .5rem !important;
 }
 .round-field {
   border-radius: 5px !important;
@@ -339,4 +347,32 @@ border-color:#ff9100;
 .round-search{
     border-bottom-right-radius: 5px !important; 
     border-top-right-radius: 5px !important;
+}
+.card-title-home a {
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+}
+.card-title-home a:hover {
+    color: #6c6a6a !important;
+    /* color: red !important; */
+    text-decoration: none;
+    /* background-color:#eeeeee!important; */
+}
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff !important;
+    background-color:#545B62 !important;
+    /* border-color: orange !important; */
+    border-color: #545B62 !important;
+}
+.page-link.active {
+    color: #fff !important;
+}
+.page-item .page-link {
+    color: orange !important;
+    border: 1px solid orange !important;
+}
+.page-link:hover {
+    background-color: #eeeeee !important;
 }
