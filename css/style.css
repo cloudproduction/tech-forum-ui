@@ -251,17 +251,6 @@ input:focus, select:focus {
     margin-right: 5px;
 }
 
-.login_btn:hover {
-    color: white;
-    background-color: #637282;
-}
-
-.login_btn {
-    color: #ff9100;
-    background-color: white;
-    border-color: #ff9100;
-}
-
 .reset_btn {
     color: white;
     background-color: #637282;
@@ -282,12 +271,21 @@ input:focus, select:focus {
     background-color: #6c757d !important;
     border-color: #6c757d !important;
 }
+.btn-secondary:focus {
+    outline:0;
+}
+
+#navbarSupportedContent button:focus{
+    outline: 0;
+}
 
 .login_btn {
     color: #ff9100;
     background-color: white;
     border-color: #ff9100;
 }
+
+.login_btn:focus {outline:0;}
 
 .links a {
     margin-left: 4px;
