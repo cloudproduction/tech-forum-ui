@@ -37,9 +37,9 @@
 
 
 <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-    <div class="row w-100 justify-content-center align-items-center">
+    <div class="row w-100 justify-content-center align-items-center" id="nav-row">
         <div class="col" id="nav-brand-toggle">
-            <a class="navbar-brand" style="color: #F4A540" href="index.html">Tech Blog</a>
+            <a class="navbar-brand" href="index.html" style="color: #F4A540">Tech Blog</a>
             <button class="navbar-toggler bg-warning" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +48,6 @@
         </div>
 
         <!--            <div class="btn-group btn-group-sm" role="group">-->
-
 
         <div class="col-8">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -69,74 +68,150 @@
     <!--        </div>-->
 </nav>
 
-<div class="container-fluid">
-    <!--	Contetns with bar start-->
-    <div class="row">
-        <!--			left sidebar start-->
-        <div class="col-sm-2">
-            <div class="left-sidebar">
-                <a href="home.html" style="text-decoration: none">Home</a>
-                <a href="tag.html" style="text-decoration: none">Tags</a>
-            </div>
+
+<!--	Contetns with bar start-->
+<div class="row" id="body-row">
+
+    <!--			left sidebar start-->
+    <div class="col-sm-2 m-0 p-0">
+        <div class="left-sidebar">
+            <a href="home.html" style="text-decoration: none">Home</a>
+            <a href="tag.html" style="text-decoration: none">Tags</a>
         </div>
-        <!--			left sidebar end-->
+    </div>
+    <!--			left sidebar end-->
 
+    <!--			Content Start-->
+    <div class="col-sm-8">
+        <div class="main-content mt-4">
 
-        <!--			Content Start-->
-        <div class="col-sm-8">
-            <div class="main-content mt-4">
+            <div class="question_with_date">
+                <div class="input-group search-tag bg-white d-flex justify-content-between">
 
-                <div class="question_with_date">
                     <div class="input-group search-tag bg-white d-flex justify-content-between">
-                        <h3>How to Display a RecyclerView in Fragment</h3>
-                        <div class="d-flex justify-content-between">
-                            <div class="justify-content-between">
-                                <a href="question_form.html" class="btn btn-secondary btn-md ">Ask Question</a>
+                        <h2>How to Display a RecyclerView in Fragment</h2>
+                        <div class="justify-content-between">
+                            <a href="question_form.html" class="btn btn-secondary btn-md" id="btn-ask-question">Ask Question</a>
+                        </div>
+                    </div>
+
+                    <!--                        <div class="input-group search-tag bg-white d-flex justify-content-between">-->
+                    <!--                            <div class="row w-100">-->
+                    <!--                                <div class="col-10 col-xs-12">-->
+                    <!--                                    <h3>How to Display a RecyclerView in Fragment</h3>-->
+                    <!--                                </div>-->
+
+                    <!--                                <div class="col-2 col-xs-12">-->
+                    <!--                                    <div class="justify-content-between" id="btn-ask-question">-->
+                    <!--                                        <a href="question_form.html" class="btn btn-secondary btn-md">Ask Question</a>-->
+                    <!--                                    </div>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+
+
+                    <!--                        </div>-->
+                    <p><span>Asked</span> 5 years, 10 months ago <span>Active</span> 1 month ago <span>Viewed</span>179k
+                        times</p>
+                </div>
+                <hr class="py-1">
+            </div>
+
+            <div class="question_body">
+                <p>I'm trying out the new RecyclerView in Android Lollipop and I'm stuck.
+
+                    I'm trying to receive a list, with an icon and a TextView to the right of the icon, inside a
+                    Fragment. <a href="https://i.stack.imgur.com/qJsOS.png"><u>i found this error.</u></a>
+                    I found this great tutorial on how to set up a RecyclerView. I have followed every point and
+                    only
+                    changed the item_layout.xml to fit my needs.</p>
+
+                <p>The project builds without any errors but when it launches on my device I'm getting this
+                    error:</p>
+
+                <a href="tag.html" style="text-decoration: none">
+                    <p><span class="badge bg-home-tag">Android</span> <span
+                            class="badge bg-home-tag">Java</span>
+                        <span class="badge bg-home-tag">Kotlin</span></p>
+                </a>
+
+            </div>
+
+            <div class="question_edit_delete">
+                <div class="input-group search-tag bg-white d-flex justify-content-between">
+                    <div class="d-flex justify-content-between">
+                        <a class="text-secondary px-2" style="text-decoration: none;"
+                           href="edit_question.html">edit</a>
+                        <a class="text-secondary" style="text-decoration: none;" data-toggle="modal"
+                           data-target="#questionDeleteModal">delete</a>
+
+                        <!-- Delete Modal Start-->
+                        <div class="modal fade" id="questionDeleteModal" tabindex="-1" role="dialog"
+                             aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="exampleModalLabel">Do you want to delete your
+                                            question?</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-warning btn-sm"
+                                                data-dismiss="modal">No
+                                        </button>
+                                        <button type="button" class="btn btn-warning btn-sm" data-dismiss="modal">
+                                            Yes
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <p><span>Asked</span> 5 years, 10 months ago <span>Active</span> 1 month ago <span>Viewed</span>179k
-                            times</p>
+                        <!-- Delete Modal End-->
                     </div>
-                    <hr class="py-1">
+                    <a>asked Apr 15 '12 at 19:29 by messi</a>
                 </div>
+                <hr class="py-1">
+            </div>
 
-                <div class="question_body">
-                    <p>I'm trying out the new RecyclerView in Android Lollipop and I'm stuck.
+            <div class="question-answers">
+                <h5>2 Answers</h5>
 
-                        I'm trying to receive a list, with an icon and a TextView to the right of the icon, inside a
-                        Fragment. <a href="https://i.stack.imgur.com/qJsOS.png"><u>i found this error.</u></a>
-                        I found this great tutorial on how to set up a RecyclerView. I have followed every point and
-                        only
-                        changed the item_layout.xml to fit my needs.</p>
+                <div class="answer1">
+                    <p>Android Official Documentation provided a <a
+                            href="https://developer.android.com/guide/topics/ui/layout/recyclerview"><u>tutorial</u></a>
+                        for
+                        creating a RecyclerView in Activity. However,
+                        it is a bit different when trying to create a RecyclerView in Fragment instead.
+                        You should retrieve RecyclerView in a Fragment after inflating core View using that View.
+                        Perhaps it
+                        can't find your recycler because it's not part of Activity</p>
 
-                    <p>The project builds without any errors but when it launches on my device I'm getting this
-                        error:</p>
-
-                    <a href="tag.html" style="text-decoration: none">
-                        <p><span class="badge bg-home-tag">Android</span> <span
-                                class="badge bg-home-tag">Java</span>
-                            <span class="badge bg-home-tag">Kotlin</span></p>
-                    </a>
-
+                    <pre> ViewHolder viewHolder = new ViewHolder(itemLayoutView);
+                        ItemData itemsData[] = { new ItemData("Indigo",R.drawable.circle),
+                        new ItemData("Red",R.drawable.color_ic_launcher),
+                        new ItemData("Blue",R.drawable.indigo);
+                        return viewHolder;</pre>
+                    <p>Finally add this permission in the manifest file:</p>
                 </div>
-
-                <div class="question_edit_delete">
+                <div class="answer_edit_delete">
                     <div class="input-group search-tag bg-white d-flex justify-content-between">
                         <div class="d-flex justify-content-between">
                             <a class="text-secondary px-2" style="text-decoration: none;"
-                               href="edit_question.html">edit</a>
+                               href="edit_question_answer.html">edit</a>
                             <a class="text-secondary" style="text-decoration: none;" data-toggle="modal"
-                               data-target="#questionDeleteModal">delete</a>
-
+                               data-target="#exampleModal">delete</a>
                             <!-- Delete Modal Start-->
-                            <div class="modal fade" id="questionDeleteModal" tabindex="-1" role="dialog"
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
                                  aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h4 class="modal-title" id="exampleModalLabel">Do you want to delete your
-                                                question?</h4>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <h4 class="modal-title" id="exampleModalLabel">Do you want to delete
+                                                your
+                                                answer?</h4>
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
@@ -144,7 +219,8 @@
                                             <button type="button" class="btn btn-outline-warning btn-sm"
                                                     data-dismiss="modal">No
                                             </button>
-                                            <button type="button" class="btn btn-warning btn-sm" data-dismiss="modal">
+                                            <button type="button" class="btn btn-warning btn-sm"
+                                                    data-dismiss="modal">
                                                 Yes
                                             </button>
                                         </div>
@@ -153,147 +229,86 @@
                             </div>
                             <!-- Delete Modal End-->
                         </div>
-                        <a>asked Apr 15 '12 at 19:29 by messi</a>
+                        <a>answered Apr 16 '12 at 19:29 by ronaldo-cr7</a>
                     </div>
                     <hr class="py-1">
                 </div>
 
-                <div class="question-answers">
-                    <h5>2 Answers</h5>
+                <div class="answer2">
+                    <p>You’ll have to create separate Java classes for each fragment (setting the layout of each
+                        class
+                        to the corresponding xml file) and then use these classes in your main activity file, Just
+                        create a different layout for each fragment and add a recycler view in xml file for
+                        whichever
+                        fragments you require.</p>
 
-                    <div class="answer1">
-                        <p>Android Official Documentation provided a <a
-                                href="https://developer.android.com/guide/topics/ui/layout/recyclerview"><u>tutorial</u></a>
-                            for
-                            creating a RecyclerView in Activity. However,
-                            it is a bit different when trying to create a RecyclerView in Fragment instead.
-                            You should retrieve RecyclerView in a Fragment after inflating core View using that View.
-                            Perhaps it
-                            can't find your recycler because it's not part of Activity</p>
+                    <p>Add this code in your MyAdapter</p>
 
-                        <pre> ViewHolder viewHolder = new ViewHolder(itemLayoutView);
-                        ItemData itemsData[] = { new ItemData("Indigo",R.drawable.circle),
-                        new ItemData("Red",R.drawable.color_ic_launcher),
-                        new ItemData("Blue",R.drawable.indigo);
-                        return viewHolder;</pre>
-                        <p>Finally add this permission in the manifest file:</p>
-                    </div>
-                    <div class="answer_edit_delete">
-                        <div class="input-group search-tag bg-white d-flex justify-content-between">
-                            <div class="d-flex justify-content-between">
-                                <a class="text-secondary px-2" style="text-decoration: none;"
-                                   href="edit_question_answer.html">edit</a>
-                                <a class="text-secondary" style="text-decoration: none;" data-toggle="modal"
-                                   data-target="#exampleModal">delete</a>
-                                <!-- Delete Modal Start-->
-                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h4 class="modal-title" id="exampleModalLabel">Do you want to delete
-                                                    your
-                                                    answer?</h4>
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-outline-warning btn-sm"
-                                                        data-dismiss="modal">No
-                                                </button>
-                                                <button type="button" class="btn btn-warning btn-sm"
-                                                        data-dismiss="modal">
-                                                    Yes
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Delete Modal End-->
-                            </div>
-                            <a>answered Apr 16 '12 at 19:29 by ronaldo-cr7</a>
-                        </div>
-                        <hr class="py-1">
-                    </div>
-
-                    <div class="answer2">
-                        <p>You’ll have to create separate Java classes for each fragment (setting the layout of each
-                            class
-                            to the corresponding xml file) and then use these classes in your main activity file, Just
-                            create a different layout for each fragment and add a recycler view in xml file for
-                            whichever
-                            fragments you require.</p>
-
-                        <p>Add this code in your MyAdapter</p>
-
-                        <pre> public class MyAdapter extends RecyclerView.Adapter"MyAdapter.ViewHolder" {
+                    <pre> public class MyAdapter extends RecyclerView.Adapter"MyAdapter.ViewHolder" {
                         private ItemData[] itemsData;
                         public MyAdapter(ItemData[] itemsData) {
                         this.itemsData = itemsData;
                         }
                     </pre>
-                        <p>So the main thing here is that anywhere you call findViewById() you will need to use
-                        <pre>rootView.findViewById()</pre>
-                        </p>
-                    </div>
-                    <div class="answer_edit_delete">
-                        <div class="input-group search-tag bg-white d-flex justify-content-between">
-                            <div class="d-flex justify-content-between">
-                                <a class="text-secondary px-2" style="text-decoration: none;"
-                                   href="edit_question_answer.html">edit</a>
-                                <a class="text-secondary" style="text-decoration: none;" data-toggle="modal"
-                                   data-target="#exampleModal">delete</a>
-                            </div>
-                            <a>answered Jun 16 '12 at 19:29 by neymar</a>
+                    <p>So the main thing here is that anywhere you call findViewById() you will need to use
+                    <pre>rootView.findViewById()</pre>
+                    </p>
+                </div>
+                <div class="answer_edit_delete">
+                    <div class="input-group search-tag bg-white d-flex justify-content-between">
+                        <div class="d-flex justify-content-between">
+                            <a class="text-secondary px-2" style="text-decoration: none;"
+                               href="edit_question_answer.html">edit</a>
+                            <a class="text-secondary" style="text-decoration: none;" data-toggle="modal"
+                               data-target="#exampleModal">delete</a>
                         </div>
-                        <hr class="py-1">
+                        <a>answered Jun 16 '12 at 19:29 by neymar</a>
                     </div>
-
+                    <hr class="py-1">
                 </div>
 
-
-                <div class="question-body">
-                    <h5>Your Answer</h5>
-                    <textarea class="form-control" name="descs" id="descs"></textarea>
-                    <button type="button" class="btn btn-warning btn-sm mt-3">Post your answer</button>
-                </div>
-
-
             </div>
-        </div>
-        <!--			Content End-->
 
 
-        <!--			right sidebar start-->
-        <div class="col-sm-2">
-            <div class="right-sidebar">
-                <a href="home.html" style="text-decoration: none">Recent Question</a>
+            <div class="question-body">
+                <h5>Your Answer</h5>
+                <textarea class="form-control" name="descs" id="descs"></textarea>
+                <button type="button" class="btn btn-warning btn-sm mt-3">Post your answer</button>
             </div>
+
+
         </div>
-        <!--			right sidebar end-->
     </div>
-    <!--	Contetns with bar end-->
-
-    <script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
-    <script>
-        CKEDITOR.replace('descs');
-    </script>
+    <!--			Content End-->
 
 
-    <!--Bootstrap CDN-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-            crossorigin="anonymous"></script>
-
+    <!--			right sidebar start-->
+    <div class="col-sm-2 m-0 p-0">
+        <div class="right-sidebar">
+            <a href="home.html" style="text-decoration: none">Recent Question</a>
+        </div>
+    </div>
+    <!--			right sidebar end-->
 </div>
+<!--	Contetns with bar end-->
+
+<script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace('descs');
+</script>
+
+
+<!--Bootstrap CDN-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
 </body>
 </html>
 

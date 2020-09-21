@@ -5,6 +5,10 @@
 body {
     font-family: 'Lato', sans-serif;
 }
+#nav-row{
+    margin: 0;
+    padding: 0;
+}
 
 .navbar a button {
     color: #F4A540;
@@ -21,9 +25,22 @@ body {
     /*color: orange;*/
 }
 
+@media screen and (max-width: 900px){
+    #search-bar{
+        width: 20%;
+    }
+}
+
+#body-row{
+    margin: 0;
+    padding: 0;
+}
+
 .left-sidebar {
-    /*margin: 0;*/
+    margin: 0;
+    padding: 0;
     /*padding: 10px;*/
+    padding-left:0px;
     background-color: white;
     border-right: 1px solid silver;
     height: 100%;
@@ -32,13 +49,15 @@ body {
 .left-sidebar a {
     display: block;
     color: #6c6a6a;
-    padding: 16px;
+    padding: 15px;
     text-decoration: none;
 }
 
 .left-sidebar a:hover {
     background: #eeeeee;
     color: black;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .main-contnet {
@@ -49,6 +68,7 @@ body {
 .right-sidebar {
     /*margin: 0;*/
     /*padding: 10px;*/
+    padding-right:0px;
     background-color: white;
     height: 100%;
     border-left: 1px solid silver;
@@ -72,10 +92,7 @@ body {
 .ask-question-body {
     background: #EFF0F1;
     font-family: 'Nunito', sans-serif;
-"
-
 }
-
 
 .question-title {
     margin-bottom: 30px;
@@ -94,6 +111,18 @@ body {
     font-size: 12px;
 }
 
+/*Question Details page*/
+
+/*@media screen and (max-width: 700px) {*/
+/*  .btn-ask-question {*/
+/*    background-color: purple;*/
+/*      color: red;*/
+/*  }*/
+/*}*/
+
+@media all and (max-width:700px) {
+   .btn-secondary { width: 100%; display:block; color: red }
+}
 
 /*edited by farhana*/
 
@@ -151,12 +180,12 @@ html, body {
     color: #2378CC;
 }
 
-.input-group-prepend span {
-    width: 50px;
-    background-color: #2378CC;
-    color: rgb(100, 94, 94);
-    border: 0 !important;
-}
+/*.input-group-prepend span {*/
+/*    width: 50px;*/
+/*    background-color: #2378CC;*/
+/*    color: rgb(100, 94, 94);*/
+/*    border: 0 !important;*/
+/*}*/
 
 .social_icon span:hover {
     color: white;
