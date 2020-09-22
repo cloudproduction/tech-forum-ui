@@ -280,6 +280,10 @@ input:focus, select:focus {
 }
 
 .login_btn {
+    color: white;
+    background-color: #637282;
+}
+.login_btn:hover {
     color: #ff9100;
     background-color: white;
     border-color: #ff9100;
