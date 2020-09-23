@@ -2,6 +2,14 @@
     font-family: 'Nunito', sans-serif;
 }
 
+
+@media screen and (max-width: 800px){
+    #btn-ask-question{
+        margin-top: -130%;
+    }
+}
+
+
 .question_with_date{
     font-size: 14px;
     /*border-bottom: 1px solid #e7e5e5 ;*/
