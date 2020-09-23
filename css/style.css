@@ -345,11 +345,19 @@ input:focus, select:focus {
 
 .bg-field {
     background-color: #f5f5f570;
-    border-color: #ff9100;
+    /* border-color: #ff9100; */
 
 
 }
 
+.form-control:focus{
+    border-color: #ff9100 !important;
+    
+}
+
+.button:focus, .btn-secondary:focus, .pagination a:focus{
+    box-shadow: none !important;
+}
 .space {
     margin-bottom: 25px !important;
 }
@@ -366,16 +374,14 @@ input:focus, select:focus {
     border-bottom-right-radius: 5px !important; 
     border-top-right-radius: 5px !important;
 }
-.card-title-home a {
+.card-title-home a, .space a {
     color: black;
     text-decoration: none;
     background-color: transparent;
 }
-.card-title-home a:hover {
+.card-title-home a:hover, .space a:hover {
     color: #6c6a6a !important;
-    /* color: red !important; */
     text-decoration: none;
-    /* background-color:#eeeeee!important; */
 }
 .page-item.active .page-link {
     z-index: 3;
@@ -394,3 +400,7 @@ input:focus, select:focus {
 .page-link:hover {
     background-color: #eeeeee !important;
 }
+
+/* .log-h{
+    height: 100% !important; 
+} */
