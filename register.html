@@ -7,76 +7,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <title>Document</title>
 
-	<!--Bootsrap 4 CDN-->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
+    <!--Bootsrap 4 CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
     <!--Fontawesome CDN-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="responsive" href="css/responsive.css">
 </head>
 <body>
-    <div class="d-flex justify-content-center h-100">
-        <div class="card card-register shadow-lg  bg-white rounded"> 
-            
-            <div class="card-body">
-                <div class="mb-4 mt-4">
-                    <img src="images/jigsaw.png" height="80px;"  alt="">
-                </div>
-                <form>
-                    <div class="input-group form-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text "><i class="fas fa-user"></i></span>
-                        </div>
-                        <input type="text" class="form-control border-field shadow-sm bg-field round-field mr-3" placeholder="First Name">
-                        
-                    </div>
-                    <div class="input-group form-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text "><i class="fas fa-user"></i></span>
-                        </div>
-                        <input type="text" class="form-control border-field shadow-sm bg-field round-field mr-3" placeholder="Last name">
-                        
-                    </div>
-                    <div class="input-group form-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text "><i class="fas fa-key"></i></span>
-                        </div>
-                        <input type="password" class="form-control border-field shadow-sm bg-field round-field mr-3" placeholder="Password">
-                    </div>
-                    <div class="input-group form-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text "><i class="fas fa-envelope"></i></span>
-                        </div>
-                        <input type="email" class="form-control border-field shadow-sm bg-field round-field mr-3" placeholder="Email">
-                    </div>
-                    <div class="input-group form-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text "><i class="fas fa-phone"></i></span>
-                        </div>
-                        <input type="tel" class="form-control border-field shadow-sm bg-field round-field mr-3" placeholder="Contact No">
-                    </div>
-                    <div class="form-group mr-3">
-                        <input type="reset" value="Reset"  class="btn float-right reset_btn shadow">
-                        <input type="submit" value="Submit" class="mr-2 btn float-right login_btn shadow">
-                    </div>
-                </form>
 
-                
-            </div>
-            <div class="space">
-                <div class="d-flex justify-content-center links">
-                    <a href="login.html">Login</a>
-                </div>
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="row w-100 justify-content-center align-items-center" id="nav-row">
+        <div class="col" id="nav-brand-toggle">
+            <a class="navbar-brand" style="color: #F4A540" href="index.html">Tech Blog</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" style="background: #F4A540;"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon btn-sm" style=""></span>
+            </button>
+        </div>
+
+        <div class="col-8">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <input type="text" class="form-control" placeholder="Search" style="text-align: center;"
+                       id="search-bar">
             </div>
         </div>
-       
+        <div class="col">
+            <div class="collapse navbar-collapse btn-group btn-group-sm" role="group" id="navbarSupportedContent">
+                <a href="login.html">
+                    <button class="btn btn-outline-warning btn-sm" type="submit">Login</button>
+                </a>
+                <a href="register.html">
+                    <button class="btn btn-warning ml-1 btn-sm" type="submit">Sign up</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="d-flex justify-content-center">
+    <div class="card card-register shadow-lg  bg-white rounded">
+
+        <div class="card-body">
+            <div class="mb-4 mt-4">
+                <img src="images/jigsaw.png" height="80px;" alt="">
+            </div>
+            <form>
+                <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text "><i class="fas fa-user"></i></span>
+                    </div>
+                    <input type="text" class="form-control border-field shadow-sm bg-field round-field mr-3"
+                           placeholder="First Name">
+
+                </div>
+                <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text "><i class="fas fa-user"></i></span>
+                    </div>
+                    <input type="text" class="form-control border-field shadow-sm bg-field round-field mr-3"
+                           placeholder="Last name">
+
+                </div>
+                <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text "><i class="fas fa-key"></i></span>
+                    </div>
+                    <input type="password" class="form-control border-field shadow-sm bg-field round-field mr-3"
+                           placeholder="Password">
+                </div>
+                <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text "><i class="fas fa-envelope"></i></span>
+                    </div>
+                    <input type="email" class="form-control border-field shadow-sm bg-field round-field mr-3"
+                           placeholder="Email">
+                </div>
+                <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text "><i class="fas fa-phone"></i></span>
+                    </div>
+                    <input type="tel" class="form-control border-field shadow-sm bg-field round-field mr-3"
+                           placeholder="Contact No">
+                </div>
+                <div class="form-group mr-3">
+                    <input type="reset" value="Reset" class="btn float-right reset_btn shadow">
+                    <input type="submit" value="Submit" class="mr-2 btn float-right login_btn shadow">
+                </div>
+            </form>
+
+
+        </div>
+        <div class="space">
+            <div class="d-flex justify-content-center links">
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </div>
+
 </div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
+
 <!------ Include the above in your HEAD tag ---------->
 
