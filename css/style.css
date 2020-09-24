@@ -272,14 +272,29 @@ input:focus, select:focus {
     outline: 0;
 }
 
-.login_btn {
+.login_btn:hover  {
     color: white;
     background-color: #637282;
 }
-.login_btn:hover {
+.login_btn {
     color: #ff9100;
     background-color: white;
     border-color: #ff9100;
+}
+
+/*.login_btn {*/
+/*    color: white;*/
+/*    background-color: #637282;*/
+/*}*/
+/*.login_btn:hover {*/
+/*    color: #ff9100;*/
+/*    background-color: white;*/
+/*    border-color: #ff9100;*/
+/*}*/
+
+
+.justify-content-center{
+    margin-top: 7%;
 }
 
 .login_btn:focus {outline:0;}
