@@ -27,6 +27,15 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
             integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
             crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        .card-custom {
+            max-width: 200px;
+        }
+    </style>
 </head>
 
 
@@ -49,7 +58,8 @@
 
         <div class="col-8">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <input type="text" class="form-control" placeholder="Search" style="text-align: center;" id="search-bar">
+                <input type="text" class="form-control" placeholder="Search" style="text-align: center;"
+                       id="search-bar">
             </div>
         </div>
         <div class="col">
@@ -67,156 +77,113 @@
 </nav>
 
 <!--<div class="container-fluid">-->
-    <!-- Contetns with bar start-->
-    <div class="row" id="body-row">
-        <!-- left sidebar start-->
-        <div class="col-sm-2 m-0 p-0">
-            <div class="left-sidebar">
-                <a href="home.html" style="text-decoration: none">Home</a>
-                <a href="tag.html" style="text-decoration: none">Tags</a>
-            </div>
+<!-- Contetns with bar start-->
+<div class="row" id="body-row">
+    <!-- left sidebar start-->
+    <div class="col-sm-2 m-0 p-0">
+        <div class="left-sidebar">
+            <a href="home.html" style="text-decoration: none">Home</a>
+            <a href="tag.html" style="text-decoration: none">Tags</a>
         </div>
-        <!-- left sidebar end-->
+    </div>
+    <!-- left sidebar end-->
 
-        <div class="col-sm-8">
-            <div class="container">
-                <div>
-                    <h1 class="mt-4">TAGS</h1>
-                    <p>Tags will be added by users while posting with the Question.
-                        These tags can be used later by other users while posting questions.A
-                        module will automatically store these tags to reuse by other users
-                    </p>
+    <div class="col-sm-8">
+        <div class="container">
+            <div>
+                <h1 class="mt-4">TAGS</h1>
+                <p>Tags will be added by users while posting with the Question.
+                    These tags can be used later by other users while posting questions.A
+                    module will automatically store these tags to reuse by other users
+                </p>
+            </div>
+            <div class="input-group search-tag d-flex justify-content-between">
+                <input type="text" class="form-control justify-content-between" placeholder="Search With Tag Name">
+                <div class="input-group-append ">
+                    <button class="btn btn-secondary mr-1 round-search " type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
                 </div>
-                <div class="input-group search-tag d-flex justify-content-between">
-                    <input type="text" class="form-control justify-content-between" placeholder="Search With Tag Name">
-                    <div class="input-group-append ">
-                        <button class="btn btn-secondary mr-1 round-search " type="button">
-                            <i class="fa fa-search"></i>
-                        </button>
+                <!-- <div class="px-5 bg-white justify-content-between">
+                </div> -->
+                <div class="btn-group justify-content-between " role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary ">Polular</button>
+                    <button type="button" class="btn btn-secondary">Name</button>
+                    <button type="button" class="btn btn-secondary">New</button>
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card card-tag bg-white shadow ">
+                            <div class="card-header tag-head-txt text-center border-tag-card">
+                                <div class="mx-4">
+                                    <h5>JAVA</h5>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center rare-wind-gradient color-block z-depth-1-half">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Nostrum corrupti .</p>
+                            </div>
+                        </div>
                     </div>
-                    <!-- <div class="px-5 bg-white justify-content-between">
-                    </div> -->
-                    <div class="btn-group justify-content-between " role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-secondary ">Polular</button>
-                        <button type="button" class="btn btn-secondary">Name</button>
-                        <button type="button" class="btn btn-secondary">New</button>
+
+                    <div class="col">
+                        <div class="card card-tag bg-white shadow">
+                            <div class="card-header tag-head-txt text-center border-tag-card">
+                                <div class="mx-4">
+                                    <h5>KOTLIN</h5>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center rare-wind-gradient color-block z-depth-1-half">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Nostrum corrupti .</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-tag bg-white shadow">
+                            <div class="card-header tag-head-txt text-center border-tag-card">
+                                <div class="mx-4">
+                                    <h5>ANDROID</h5>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center rare-wind-gradient color-block z-depth-1-half">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Nostrum corrupti .</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-tag bg-white shadow">
+                            <div class="card-header tag-head-txt text-center border-tag-card">
+                                <div class="mx-4">
+                                    <h5>iOS</h5>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center rare-wind-gradient color-block z-depth-1-half">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Nostrum corrupti .</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class=" col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3" align="center">
+                    <div class="col">
                         <div class="card card-tag bg-white shadow">
                             <div class="card-header tag-head-txt text-center border-tag-card">
                                 <div class="mx-4">
-                                    <h4>CSS</h4>
+                                    <h5>DART</h5>
                                 </div>
-
-                            </div>
-
-                            <div class="card-body text-center rare-wind-gradient color-block z-depth-1-half">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Nostrum corrupti .</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3" align="center">
-                        <div class="card card-tag bg-white shadow">
-                            <div class="card-header tag-head-txt text-center border-tag-card">
-                                <div class="mx-4">
-                                    <h4>JAVA</h4>
-                                </div>
-
-                            </div>
-
-                            <div class="card-body text-center rare-wind-gradient color-block z-depth-1-half">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Nostrum corrupti .</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3" align="center">
-                        <div class="card card-tag bg-white shadow">
-                            <div class="card-header tag-head-txt text-center border-tag-card">
-                                <div class="mx-4">
-                                    <h4>CSS</h4>
-                                </div>
-
-                            </div>
-
-                            <div class="card-body text-center rare-wind-gradient color-block z-depth-1-half">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Nostrum corrupti .</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3" align="center">
-                        <div class="card card-tag bg-white shadow">
-                            <div class="card-header tag-head-txt text-center border-tag-card">
-                                <div class="mx-4">
-                                    <h4>PYTHON</h4>
-                                </div>
-
-                            </div>
-
-                            <div class="card-body text-center rare-wind-gradient color-block z-depth-1-half">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Nostrum corrupti .</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="row"></div> -->
-                    <div class=" col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3" align="center">
-                        <div class="card card-tag bg-white shadow">
-                            <div class="card-header tag-head-txt text-center border-tag-card">
-                                <div class="mx-4">
-                                    <h4>JAVA</h4>
-                                </div>
-
-                            </div>
-
-                            <div class="card-body text-center rare-wind-gradient color-block z-depth-1-half">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Nostrum corrupti .</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3" align="center">
-                        <div class="card card-tag bg-white shadow">
-                            <div class="card-header tag-head-txt text-center border-tag-card">
-                                <div class="mx-4">
-                                    <h4>JS</h4>
-                                </div>
-
-                            </div>
-
-                            <div class="card-body text-center rare-wind-gradient color-block z-depth-1-half">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Nostrum corrupti .</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3" align="center">
-                        <div class="card card-tag bg-white shadow">
-                            <div class="card-header tag-head-txt text-center border-tag-card">
-                                <div class="mx-4">
-                                    <h4>CSS</h4>
-                                </div>
-
-                            </div>
-
-                            <div class="card-body text-center rare-wind-gradient color-block z-depth-1-half">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Nostrum corrupti .</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3" align="center">
-                        <div class="card card-tag bg-white shadow">
-                            <div class="card-header tag-head-txt text-center border-tag-card">
-                                <div class="mx-4">
-                                    <h4>JS</h4>
-                                </div>
-
                             </div>
 
                             <div class="card-body text-center rare-wind-gradient color-block z-depth-1-half">
@@ -226,26 +193,71 @@
                         </div>
                     </div>
 
+                    <div class="col">
+                        <div class="card card-tag bg-white shadow">
+                            <div class="card-header tag-head-txt text-center border-tag-card">
+                                <div class="mx-4">
+                                    <h5>FLUTTER</h5>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center rare-wind-gradient color-block z-depth-1-half">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Nostrum corrupti .</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-tag bg-white shadow">
+                            <div class="card-header tag-head-txt text-center border-tag-card">
+                                <div class="mx-4">
+                                    <h5>REACT</h5>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center rare-wind-gradient color-block z-depth-1-half">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Nostrum corrupti .</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-tag bg-white shadow">
+                            <div class="card-header tag-head-txt text-center border-tag-card">
+                                <div class="mx-4">
+                                    <h5>XAMARIN</h5>
+                                </div>
+                            </div>
+
+                            <div class="card-body text-center rare-wind-gradient color-block z-depth-1-half">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Nostrum corrupti .</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-
-                <ul class="pagination justify-content-center">
-                    <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
-                    <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
-                    <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
-                    <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
-                </ul>
             </div>
-        </div>
 
-        <!-- right sidebar start-->
-        <div class="col-sm-2 m-0 p-0">
-            <div class="right-sidebar">
-                <a href="question_details.html" style="text-decoration: none">Recent Question</a>
-            </div>
+
+            <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
+                <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
+            </ul>
         </div>
-        <!-- right sidebar end-->
     </div>
+
+    <!-- right sidebar start-->
+    <div class="col-sm-2 m-0 p-0">
+        <div class="right-sidebar">
+            <a href="question_details.html" style="text-decoration: none">Recent Question</a>
+        </div>
+    </div>
+    <!-- right sidebar end-->
+</div>
 <!--</div>-->
 <!--</div>-->
 
