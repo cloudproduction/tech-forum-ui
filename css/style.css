@@ -193,62 +193,69 @@ html, body {
     height: 200px;
     margin-top: auto;
     margin-bottom: 35px !important;
-    width: 190px;
+    /*width: 190px;*/
+    width: 100%;
     background-color: #fafafa !important;
 }
 
-@media screen and (max-width: 1024px){
-    .card-tag{
-        margin-left: 50px;
-    }
-}
+/*card media query start*/
 
-@media screen and (max-width: 768px){
-    .card-tag{
-        margin-left: 0px;
-    }
-}
+/*@media screen and (max-width: 1024px){*/
+/*    .card-tag{*/
+/*        margin-left: 50px;*/
+/*    }*/
+/*}*/
 
-@media screen and (max-width: 700px){
-    .card-tag{
-        margin-left: 60px;
-    }
-}
+/*@media screen and (max-width: 768px){*/
+/*    .card-tag{*/
+/*        margin-left: 0px;*/
+/*    }*/
+/*}*/
 
-@media only screen and (max-width : 540px) {
-    .card-tag{
-        margin-left: 0px;
-    }
-}
+/*@media screen and (max-width: 700px){*/
+/*    .card-tag{*/
+/*        margin-left: 60px;*/
+/*    }*/
+/*}*/
 
-@media only screen and (max-width : 414px) {
-    .card-tag{
-        margin-left: 60px;
-    }
-}
+/*@media only screen and (max-width : 540px) {*/
+/*    .card-tag{*/
+/*        margin-left: 0px;*/
+/*    }*/
+/*}*/
 
-@media only screen and (max-width : 375px) {
-    .card-tag{
-        margin-left: 45px;
-    }
-}
-@media only screen and (max-width : 360px) {
-    .card-tag{
-        margin-left: 40px;
-    }
-}
+/*@media only screen and (max-width : 414px) {*/
+/*    .card-tag{*/
+/*        !*margin-left: 60px;*!*/
+/*    }*/
+/*}*/
 
-@media only screen and (max-width : 320px) {
-    .card-tag{
-        margin-left: 20px;
-    }
-}
+/*@media only screen and (max-width : 375px) {*/
+/*    .card-tag{*/
+/*        margin-left: 45px;*/
+/*    }*/
+/*}*/
+/*@media only screen and (max-width : 360px) {*/
+/*    .card-tag{*/
+/*        margin-left: 40px;*/
+/*    }*/
+/*}*/
 
-@media only screen and (max-width : 280px) {
-    .card-tag{
-        margin-left: 0px;
-    }
-}
+/*@media only screen and (max-width : 320px) {*/
+/*    .card-tag{*/
+/*        margin-left: 20px;*/
+/*    }*/
+/*}*/
+
+/*@media only screen and (max-width : 280px) {*/
+/*    .card-tag{*/
+/*        margin-left: 0px;*/
+/*    }*/
+/*}*/
+
+/*card media query end*/
+
+
 
 /*.col-md-8 .row {*/
 /*  margin-left:3px !important;*/
