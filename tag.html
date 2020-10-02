@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+<!--...-->
 <head>
     <meta charset="utf-8">
     <title> Tag </title>
@@ -11,7 +11,7 @@
 
 
     <!-- For icons -->
-    <link href="css/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="css/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet"> -->
 
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -27,18 +27,9 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
             integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
             crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <style>
-        .card-custom {
-            max-width: 200px;
-        }
-    </style>
 </head>
 
-
+<!--<div class="container">-->
 <body>
 
 <!--<div class="container-fluid">-->
@@ -46,7 +37,7 @@
 <nav class="navbar navbar-expand-lg navbar-light sticky-top">
     <div class="row w-100 justify-content-center align-items-center" id="nav-row">
         <div class="col" id="nav-brand-toggle">
-            <a class="navbar-brand" style="color: #F4A540" href="index.html">Tech Blog</a>
+            <a class="navbar-brand" href="index.html" style="color: #F4A540">Tech Blog</a>
             <button class="navbar-toggler bg-warning" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,8 +49,7 @@
 
         <div class="col-8">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <input type="text" class="form-control" placeholder="Search" style="text-align: center;"
-                       id="search-bar">
+                <input type="text" class="form-control" placeholder="Search" style="text-align: center;" id="search-bar">
             </div>
         </div>
         <div class="col">
@@ -76,18 +66,21 @@
     <!--        </div>-->
 </nav>
 
-<!--<div class="container-fluid">-->
-<!-- Contetns with bar start-->
+
+<!--	Contetns with bar start-->
 <div class="row" id="body-row">
-    <!-- left sidebar start-->
+
+    <!--			left sidebar start-->
     <div class="col-sm-2 m-0 p-0">
-        <div class="left-sidebar">
+        <div class="left-sidebar" style="text-indent: 20px">
             <a href="home.html" style="text-decoration: none">Home</a>
             <a href="tag.html" style="text-decoration: none">Tags</a>
         </div>
     </div>
-    <!-- left sidebar end-->
+    <!--			left sidebar end-->
 
+
+    <!--			Content Start-->
     <div class="col-sm-8">
         <div class="container">
             <div>
@@ -117,142 +110,106 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <div class="card card-tag bg-white shadow ">
-                            <div class="card-header tag-head-txt text-center border-tag-card">
-                                <div class="mx-4">
-                                    <a href="https://www.java.com/en/download/help/whatis_java.html" style="text-decoration: none; color: #F4A540">
-                                        <h5>JAVA</h5>
-                                    </a>
-                                </div>
+                        <div class="card card-tag bg-white shadow rounded-circle text-center align-items-center justify-content-center">
+                            <hr>
+                            <div class="mx-4">
+                                <a href="https://www.java.com/en/download/help/whatis_java.html"
+                                   style="text-decoration: none; color: #F4A540">
+                                    <h5>JAVA</h5>
+                                </a>
                             </div>
-
-                            <div class="card-body text-center rare-wind-gradient color-block z-depth-1-half">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Nostrum corrupti .</p>
-                            </div>
+                            <hr>
                         </div>
                     </div>
 
                     <div class="col">
-                        <div class="card card-tag bg-white shadow">
-                            <div class="card-header tag-head-txt text-center border-tag-card">
-                                <div class="mx-4">
-                                    <a href="https://kotlinlang.org" style="text-decoration: none; color: #F4A540">
+                        <div class="card card-tag bg-white shadow rounded-circle text-center align-items-center justify-content-center">
+                            <hr>
+                            <div class="mx-4">
+                                <a href="https://kotlinlang.org" style="text-decoration: none; color: #F4A540">
                                     <h5>KOTLIN</h5>
-                                    </a>
-                                </div>
+                                </a>
                             </div>
-
-                            <div class="card-body text-center rare-wind-gradient color-block z-depth-1-half">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Nostrum corrupti .</p>
-                            </div>
+                            <hr>
                         </div>
                     </div>
 
                     <div class="col">
-                        <div class="card card-tag bg-white shadow">
-                            <div class="card-header tag-head-txt text-center border-tag-card">
-                                <div class="mx-4">
-                                    <a href="https://developer.android.com/" style="text-decoration: none; color: #F4A540">
+                        <div class="card card-tag bg-white shadow rounded-circle text-center align-items-center justify-content-center">
+                            <hr>
+                            <div class="mx-4">
+                                <a href="https://developer.android.com/" style="text-decoration: none; color: #F4A540">
                                     <h5>ANDROID</h5>
-                                    </a>
-                                </div>
+                                </a>
                             </div>
-
-                            <div class="card-body text-center rare-wind-gradient color-block z-depth-1-half">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Nostrum corrupti .</p>
-                            </div>
+                            <hr>
                         </div>
                     </div>
 
                     <div class="col">
-                        <div class="card card-tag bg-white shadow">
-                            <div class="card-header tag-head-txt text-center border-tag-card">
-                                <div class="mx-4">
-                                    <a href="https://www.apple.com/ios/ios-14" style="text-decoration: none; color: #F4A540">
+                        <div class="card card-tag bg-white shadow rounded-circle text-center align-items-center justify-content-center">
+                            <hr>
+                            <div class="mx-4">
+                                <a href="https://www.apple.com/ios/ios-14"
+                                   style="text-decoration: none; color: #F4A540">
                                     <h5>iOS</h5>
-                                    </a>
-                                </div>
+                                </a>
                             </div>
-
-                            <div class="card-body text-center rare-wind-gradient color-block z-depth-1-half">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Nostrum corrupti .</p>
-                            </div>
+                            <hr>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="row">
                     <div class="col">
-                        <div class="card card-tag bg-white shadow">
-                            <div class="card-header tag-head-txt text-center border-tag-card">
-                                <div class="mx-4">
-                                    <a href="https://dart.dev/" style="text-decoration: none; color: #F4A540">
+                        <div class="card card-tag bg-white shadow rounded-circle text-center align-items-center justify-content-center">
+                            <hr>
+                            <div class="mx-4">
+                                <a href="https://dart.dev/" style="text-decoration: none; color: #F4A540">
                                     <h5>DART</h5>
-                                    </a>
-                                </div>
+                                </a>
                             </div>
-
-                            <div class="card-body text-center rare-wind-gradient color-block z-depth-1-half">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Nostrum corrupti .</p>
-                            </div>
+                            <hr>
                         </div>
                     </div>
 
                     <div class="col">
-                        <div class="card card-tag bg-white shadow">
-                            <div class="card-header tag-head-txt text-center border-tag-card">
-                                <div class="mx-4">
-                                    <a href="https://flutter.dev/" style="text-decoration: none; color: #F4A540">
+                        <div class="card card-tag bg-white shadow rounded-circle text-center align-items-center justify-content-center">
+                            <hr>
+                            <div class="mx-4">
+                                <a href="https://flutter.dev/" style="text-decoration: none; color: #F4A540">
                                     <h5>FLUTTER</h5>
-                                    </a>
-                                </div>
+                                </a>
                             </div>
-
-                            <div class="card-body text-center rare-wind-gradient color-block z-depth-1-half">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Nostrum corrupti .</p>
-                            </div>
+                            <hr>
                         </div>
                     </div>
 
                     <div class="col">
-                        <div class="card card-tag bg-white shadow">
-                            <div class="card-header tag-head-txt text-center border-tag-card">
-                                <div class="mx-4">
-                                    <a href="https://reactjs.org/" style="text-decoration: none; color: #F4A540">
+                        <div class="card card-tag bg-white shadow rounded-circle text-center align-items-center justify-content-center">
+                            <hr>
+                            <div class="mx-4">
+                                <a href="https://reactjs.org/" style="text-decoration: none; color: #F4A540">
                                     <h5>REACT</h5>
-                                    </a>
-                                </div>
+                                </a>
                             </div>
-
-                            <div class="card-body text-center rare-wind-gradient color-block z-depth-1-half">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Nostrum corrupti .</p>
-                            </div>
+                            <hr>
                         </div>
                     </div>
 
                     <div class="col">
-                        <div class="card card-tag bg-white shadow">
-                            <div class="card-header tag-head-txt text-center border-tag-card">
-                                <div class="mx-4">
-                                    <a href="https://dotnet.microsoft.com/apps/xamarin" style="text-decoration: none; color: #F4A540">
-                                    <h5>XAMARIN</h5>
+                        <div class="card card-tag bg-white shadow rounded-circle text-center align-items-center justify-content-center">
+                            <hr>
+                            <div class="mx-4">
+                                 <a href="https://nodejs.org/en/docs/" style="text-decoration: none;">
+                                    <h5>Node</h5>
                                     </a>
-                                </div>
                             </div>
-
-                            <div class="card-body text-center rare-wind-gradient color-block z-depth-1-half">
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Nostrum corrupti .</p>
-                            </div>
+                            <hr>
                         </div>
                     </div>
+
                 </div>
             </div>
 
@@ -265,17 +222,17 @@
             </ul>
         </div>
     </div>
+    <!--			Content End-->
 
-    <!-- right sidebar start-->
+    <!--			right sidebar start-->
     <div class="col-sm-2 m-0 p-0">
         <div class="right-sidebar">
-            <a href="question_details.html" style="text-decoration: none">Recent Question</a>
+            <a href="home.html" style="text-decoration: none">Recent Question</a>
         </div>
     </div>
-    <!-- right sidebar end-->
+    <!--			right sidebar end-->
 </div>
-<!--</div>-->
-<!--</div>-->
+<!--	Contetns with bar end-->
 
 
 <!--Bootstrap CDN-->
@@ -288,12 +245,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-<!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-<script src="js/main.js"></script>
-<!------ Include the above in your HEAD tag ---------->
 </body>
+
+<!--</div>-->
 </html>
-
-
