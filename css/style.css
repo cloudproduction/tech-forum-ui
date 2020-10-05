@@ -57,7 +57,7 @@ body {
 }
 
 .left-sidebar a:hover {
-    background: #eeeeee;
+    background: #f5f5f5;
     color: black;
     margin-left: 0;
     margin-right: 0;
@@ -85,7 +85,7 @@ body {
 }
 
 .right-sidebar a:hover {
-    background: #eeeeee;
+    background: #f5f5f5;
     color: black;
 }
 
@@ -189,25 +189,27 @@ html, body {
     color: black;
 }
 
+#main-card-row{
+    margin-top: -20px;
+}
+
 .card-tag {
-    height: 200px;
+    height: 100%;
     /*margin-top: auto;*/
-    margin-bottom: 25px !important;
+    /*margin-bottom: 25px !important;*/
     /*width: 190px;*/
     width: 100%;
-    background-color: #fafafa !important;
+    background-color: #f5f5f5 !important;
 }
 
 .card-tag h5{
     color: #ff9100;
 }
 .card-tag h5:hover{
-    color: #9da1a5 ;
+    color: #9da1a5;
 }
 
-.card-tag hr{
-    width: 95%;
-    /*height: 1px;*/
+.card-column{
     background: #ff9100;
 }
 
