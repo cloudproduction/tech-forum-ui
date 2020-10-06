@@ -193,6 +193,12 @@ html, body {
     margin-top: -20px;
 }
 
+/*@media only screen and (max-width : 320px) {*/
+/*    .card-tag{*/
+/*        margin-left: 20px;*/
+/*    }*/
+/*}*/
+
 .card-tag {
     height: 100%;
     /*margin-top: auto;*/
@@ -434,7 +440,7 @@ input:focus, select:focus {
 
 .form-control:focus{
     border-color: #ff9100 !important;
-    
+
 }
 
 .button:focus, .btn-secondary:focus, .pagination a:focus{
@@ -453,7 +459,7 @@ input:focus, select:focus {
   border-radius: 5px !important;
 }
 .round-search{
-    border-bottom-right-radius: 5px !important; 
+    border-bottom-right-radius: 5px !important;
     border-top-right-radius: 5px !important;
 }
 .card-title-home a, .space a {
