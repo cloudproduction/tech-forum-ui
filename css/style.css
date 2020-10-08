@@ -5,7 +5,8 @@
 body {
     font-family: 'Lato', sans-serif;
 }
-#nav-row{
+
+#nav-row {
     margin: 0;
     padding: 0;
 }
@@ -25,8 +26,8 @@ body {
     /*color: orange;*/
 }
 
-@media screen and (max-width: 700px){
-    #search-bar{
+@media screen and (max-width: 700px) {
+    #search-bar {
         width: 160%;
         margin-left: -62px;
         margin-top: 5px;
@@ -34,7 +35,32 @@ body {
     }
 }
 
-#body-row{
+
+.user-icon {
+    /*margin-right: 50px;*/
+    font-size: 20px;
+    /*margin-top: 6px;*/
+    color: #ff9100;
+}
+
+.fa-user{
+    color: #ff9100;
+}
+.fa-cog {
+    color: #ff9100;
+}
+.fa-power-off{
+    color: #ff9100;
+}
+
+@media only screen and (max-width : 375px) {
+    .user-icon {
+        margin-top: -40px;
+        margin-left: -25px;
+    }
+}
+
+#body-row {
     margin: 0;
     padding: 0;
 }
@@ -42,7 +68,7 @@ body {
 .left-sidebar {
     margin: 0;
     padding: 0;
-    padding-left:0px;
+    padding-left: 0px;
     background-color: white;
     border-right: 1px solid silver;
     height: 100%;
@@ -71,7 +97,7 @@ body {
 .right-sidebar {
     /*margin: 0;*/
     /*padding: 10px;*/
-    padding-right:0px;
+    padding-right: 0px;
     background-color: white;
     height: 100%;
     border-left: 1px solid silver;
@@ -113,8 +139,6 @@ body {
 .container p {
     font-size: 12px;
 }
-
-
 
 
 /*edited by farhana*/
@@ -189,7 +213,7 @@ html, body {
     color: black;
 }
 
-#main-card-row{
+#main-card-row {
     margin-top: -20px;
 }
 
@@ -208,14 +232,15 @@ html, body {
     background-color: #f5f5f52e !important;
 }
 
-.card-tag h5{
+.card-tag h5 {
     color: #ff9100;
 }
-.card-tag h5:hover{
+
+.card-tag h5:hover {
     color: #9da1a5;
 }
 
-.card-column{
+.card-column {
     background: #ff9100;
 }
 
@@ -278,7 +303,6 @@ html, body {
 /*card media query end*/
 
 
-
 /*.col-md-8 .row {*/
 /*  margin-left:3px !important;*/
 /*}*/
@@ -328,11 +352,13 @@ input:focus, select:focus {
     color: white;
     background-color: #637282;
 }
+
 .reset_btn:hover {
     color: #ff9100;
     background-color: white;
     border-color: #ff9100;
 }
+
 .btn-secondary:hover {
     color: #ff9100 !important;
     background-color: white !important;
@@ -344,18 +370,20 @@ input:focus, select:focus {
     background-color: #6c757d !important;
     border-color: #6c757d !important;
 }
-.btn-secondary:focus {
-    outline:0;
-}
 
-#navbarSupportedContent button:focus{
+.btn-secondary:focus {
     outline: 0;
 }
 
-.login_btn:hover  {
+#navbarSupportedContent button:focus {
+    outline: 0;
+}
+
+.login_btn:hover {
     color: white;
     background-color: #637282;
 }
+
 .login_btn {
     color: #ff9100;
     background-color: white;
@@ -373,11 +401,13 @@ input:focus, select:focus {
 /*}*/
 
 
-.justify-content-center{
+.justify-content-center {
     margin-top: 7%;
 }
 
-.login_btn:focus {outline:0;}
+.login_btn:focus {
+    outline: 0;
+}
 
 .links a {
     margin-left: 4px;
@@ -408,10 +438,11 @@ input:focus, select:focus {
 }
 
 .bg-home-tag:hover {
-    background-color: rgb(255,140,0);
-  }
-.border-tag-card{
-  border-color:orange !important;
+    background-color: rgb(255, 140, 0);
+}
+
+.border-tag-card {
+    border-color: orange !important;
 
 }
 
@@ -438,53 +469,61 @@ input:focus, select:focus {
 
 }
 
-.form-control:focus{
+.form-control:focus {
     border-color: #ff9100 !important;
 
 }
 
-.button:focus, .btn-secondary:focus, .pagination a:focus{
+.button:focus, .btn-secondary:focus, .pagination a:focus {
     box-shadow: none !important;
 }
+
 .space {
     margin-bottom: 25px !important;
 }
 
 .card-title-home {
-  /* padding-top: .5rem !important; */
-  margin-bottom: .5rem !important;
+    /* padding-top: .5rem !important; */
+    margin-bottom: .5rem !important;
 }
 
 .round-field {
-  border-radius: 5px !important;
+    border-radius: 5px !important;
 }
-.round-search{
+
+.round-search {
     border-bottom-right-radius: 5px !important;
     border-top-right-radius: 5px !important;
 }
+
 .card-title-home a, .space a {
     color: black;
     text-decoration: none;
     background-color: transparent;
 }
+
 .card-title-home a:hover, .space a:hover {
     color: #6c6a6a !important;
     text-decoration: none;
 }
+
 .page-item.active .page-link {
     z-index: 3;
     color: #fff !important;
-    background-color:#545B62 !important;
+    background-color: #545B62 !important;
     /* border-color: orange !important; */
     border-color: #545B62 !important;
 }
+
 .page-link.active {
     color: #fff !important;
 }
+
 .page-item .page-link {
     color: orange !important;
     border: 1px solid orange !important;
 }
+
 .page-link:hover {
     background-color: #eeeeee !important;
 }
