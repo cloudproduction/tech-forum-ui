@@ -29,7 +29,7 @@ body {
 @media screen and (max-width: 700px) {
     #search-bar {
         width: 160%;
-        margin-left: -62px;
+        margin-left: -60px;
         margin-top: 5px;
         margin-bottom: 8px;
     }
@@ -38,7 +38,7 @@ body {
 
 .user-icon {
     /*margin-right: 50px;*/
-    font-size: 20px;
+    font-size: 15px;
     /*margin-top: 6px;*/
     color: #ff9100;
 }
@@ -53,11 +53,30 @@ body {
     color: #ff9100;
 }
 
+.fa-envelope{
+    color: #ff9100;
+}
+
+.fa-users{
+    color: #ff9100;
+}
+
 @media only screen and (max-width : 375px) {
     .user-icon {
         margin-top: -40px;
         margin-left: -25px;
     }
+}
+
+
+.bell-icon {
+    margin-right: 13px;
+    font-size: 15px;
+    color: #ff9100;
+}
+
+.notification {
+    font-size: 12px;
 }
 
 #body-row {
