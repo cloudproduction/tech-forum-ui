@@ -35,6 +35,21 @@ body {
     }
 }
 
+@media screen and (max-width: 700px) {
+    #index-search-profile-notification {
+        width: 100%;
+        /*margin-left: -60px;*/
+        margin-top: 5px;
+        margin-bottom: 8px;
+    }
+}
+
+#notification-bell{
+    margin-top: 10px;
+}
+#user-profile-icon{
+    margin-top: 11px;
+}
 
 .user-icon {
     /*margin-right: 50px;*/
@@ -43,31 +58,25 @@ body {
     color: #ff9100;
 }
 
-.fa-user{
+.fa-user {
     color: #ff9100;
 }
+
 .fa-cog {
     color: #ff9100;
 }
-.fa-power-off{
+
+.fa-power-off {
     color: #ff9100;
 }
 
-.fa-envelope{
+.fa-envelope {
     color: #ff9100;
 }
 
-.fa-users{
+.fa-users {
     color: #ff9100;
 }
-
-@media only screen and (max-width : 375px) {
-    .user-icon {
-        margin-top: -40px;
-        margin-left: -25px;
-    }
-}
-
 
 .bell-icon {
     margin-right: 13px;
@@ -78,6 +87,7 @@ body {
 .notification {
     font-size: 12px;
 }
+
 
 #body-row {
     margin: 0;
