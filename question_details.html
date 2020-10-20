@@ -231,6 +231,26 @@
                         </div>
                         <a>answered Apr 16 '12 at 19:29 by ronaldo-cr7</a>
                     </div>
+
+
+                    <div class="comment-section">
+                        <p>It did not work for me. I tried the same way.... but I have a requirement to save a file in
+                            the server with filename as a parameter. Any suggestion, will be highly appreciated</p>
+<!--                        <span class="badge bg-home-tag">>-alexandra daddario Oct 16 '18 at 18:29</span>-->
+                        <p><span style="color: #3196F7">-alexandra daddario</span> <span style="color: #9da1a5">Oct 16 '18 at 18:29</span></p>
+                        <hr>
+
+                        <a class="text-secondary " style="text-decoration: none;" onclick="onButtonClick()">add a
+                            comment</a>
+
+                        <div class="bg-white d-flex justify-content-between">
+                                 <textarea class="hide" id="textInput" name="story" rows="3" style="padding: 10px"
+                                           placeholder="write your comment here..."></textarea>
+                            <div class="justify-content-between">
+                                <a class="btn btn-secondary btn-md mr-4">Add Comment</a>
+                            </div>
+                        </div>
+                    </div>
                     <hr class="py-1">
                 </div>
 
@@ -295,6 +315,12 @@
 <script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
 <script>
     CKEDITOR.replace('descs');
+</script>
+
+<script>
+    function onButtonClick() {
+        document.getElementById('textInput').className = "show";
+    }
 </script>
 
 
