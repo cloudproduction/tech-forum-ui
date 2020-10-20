@@ -41,6 +41,37 @@
     font-size: 14px;
 }
 
+/*Comment Section Start*/
+.comment-section{
+    margin-left: 4%;
+}
+
+.comment-section input{
+    height: 590px; width: 500px;
+}
+
+.comment-section span{
+    margin-top: -6px;
+}
+/*Comment Section End*/
+
+.hide{
+  display:none;
+}
+.show{
+  display:block;
+}
+
+#textInput{
+    width: 80%;
+    /*margin-left: 1%;*/
+}
+
+
+.hide:focus {
+    border-color: #ff9100 !important;
+
+}
 pre{
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   /*margin-bottom: 10px;*/
